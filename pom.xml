@@ -140,8 +140,16 @@
           <artifactId>jetty-maven-plugin</artifactId>
           <version>8.0.0.M1</version>
         </plugin>
+	      
+	      <plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
       </plugins>
-    </pluginManagement>
+	  </pluginManagement>		
   </build>
 	<dependencies>
 
@@ -226,17 +234,5 @@
 
 	</dependencies>
 
-	<build>
-		<finalName>SpringMVC</finalName>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>
